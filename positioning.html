@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Position Example</title>
+  <style>
+    div {
+      margin: 10px;
+      padding: 10px;
+      border: 2px solid gray;
+    }
+
+    .relative {
+      position: relative;
+      left: 40px;
+      border-color: green;
+    }
+
+    .absolute {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      border-color: blue;
+    }
+
+    .fixed {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: lightyellow;
+      border-color: red;
+    }
+
+    .sticky {
+      position: sticky;
+      top: 0;
+      background: lightpink;
+      border-color: purple;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CSS Position Types</h2>
+
+  <div>Default div (static)</div>
+
+  <div class="sticky">Sticky div (sticks on scroll)</div>
+
+  <div class="relative">
+    Relative div
+    <div class="absolute">Absolute inside relative</div>
+  </div>
+
+  <div class="fixed">Fixed div (always on screen)</div>
+
+  <p style="height: 600px;">Scroll down to test sticky and fixed.</p>
+
+</body>
+</html>
+
