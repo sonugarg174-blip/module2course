@@ -1,0 +1,25 @@
+box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+
+  /* Apply the animation */
+  animation: moveBox 4s infinite alternate;
+}
+
+/* Define the animation */
+@keyframes moveBox {
+  0% {
+    left: 0;
+    background-color: red;
+  }
+  50% {
+    left: 200px;
+    background-color: blue;
+  }
+  100% {
+    left: 0;
+    background-color: green;
+  }
+}
